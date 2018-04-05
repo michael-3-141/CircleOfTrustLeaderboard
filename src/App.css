@@ -1,0 +1,127 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App-header {
+  text-align: center;
+  background-color: rgb(112, 22, 112);
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.App-owner-text {
+  margin: 0;
+}
+
+.App-all {
+  background-color: #F5F5F5;
+}
+
+.App-betrayed {
+  background-color: #FFCDD2;
+}
+
+.App-active {
+  background-color: #BBDEFB;
+}
+
+h2, p {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.App-circle {
+  margin: 0.5em 1em;
+  background: #1c1c1c;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  display: flex;
+  justify-content: space-between;
+  min-width: 0;  
+}
+
+.App-circle-name {
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  text-decoration: none;
+}
+
+.App-circle-score {
+  text-align: right;
+}
+
+.App-circle-1 {
+  background-color: #820080;
+}
+
+.App-circle-10 {
+  background-color: #0083c7;
+}
+
+.App-circle-100 {
+  background-color: #02be01;
+}
+
+.App-circle-1000 {
+  background-color: #e59500;
+}
+
+.App-circle-10000 {
+  background-color: #e50000;
+}
+
+@media screen and (min-width: 900px) {
+  .App-content {
+    display: flex;
+  }
+
+  .App-content > div {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.App-loading {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(112, 22, 112);
+
+  margin: 1em auto;
+
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
